@@ -46,6 +46,8 @@ namespace AsepriteImporter
                     importTypeProperty.intValue = importType;
                 }
 
+                EditorGUILayout.PropertyField( serializedObject.FindProperty( "LayersToTextures" ) );
+
                 var transparentColorMask = serializedObject.FindProperty(textureSettings + "transparentMask");
                 var transparentColor = serializedObject.FindProperty(textureSettings + "transparentColor");
 
